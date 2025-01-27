@@ -1,8 +1,10 @@
 <template>
   <div class="feature-card">
-    <h2>Test Case</h2>
-    <p>Create and manage test cases</p>
-    <button class="feature-btn" @click="openTestCase">Open Test Cases</button>
+    <h2>Test Cases</h2>
+    <p>View and manage test cases</p>
+    <button class="feature-btn" @click="openTestCases">
+      Open Test Cases
+    </button>
   </div>
 </template>
 
@@ -10,9 +12,8 @@
 export default {
   name: 'TestCaseButton',
   methods: {
-    openTestCase() {
-      console.log('Test Case button clicked');
-      // Add more functionality here
+    openTestCases() {
+      this.$router.push('/test-cases');
     }
   }
 }
@@ -48,15 +49,14 @@ p {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 10px;
   cursor: pointer;
   border-radius: 6px;
-  transition: background-color 0.3s, transform 0.2s;
 }
 
 .feature-btn:hover {
-  background-color: #3a7bd5;
-  transform: translateY(-2px);
+  background-color: #357abd;
 }
 </style>
+

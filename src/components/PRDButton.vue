@@ -12,7 +12,13 @@ export default {
   methods: {
     openPRD() {
       console.log('PRD button clicked');
-      // Add more functionality here
+      // Navigate to the PRD page with some state
+      this.$router.push({
+        name: 'PRDPage',
+        state: {
+          prdData: [] // Example: pass an empty array or real PRD data
+        }
+      });
     }
   }
 }

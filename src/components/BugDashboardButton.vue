@@ -1,8 +1,10 @@
 <template>
   <div class="feature-card">
     <h2>Bug Dashboard</h2>
-    <p>Track and manage bugs</p>
-    <button class="feature-btn" @click="openBugDashboard">Open Bug Dashboard</button>
+    <p>View and manage reported bugs</p>
+    <button class="feature-btn" @click="openBugDashboard">
+      Open Bug Dashboard
+    </button>
   </div>
 </template>
 
@@ -11,8 +13,10 @@ export default {
   name: 'BugDashboardButton',
   methods: {
     openBugDashboard() {
-      console.log('Bug Dashboard button clicked');
-      // Add more functionality here
+      // Redirecting to the "Under Development" page when the button is clicked
+      this.$router.push({ name: 'UnderDevelopment' });
+      
+      console.log('Bug Dashboard is under development. Please check back later.');
     }
   }
 }

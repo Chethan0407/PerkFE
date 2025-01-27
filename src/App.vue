@@ -44,7 +44,7 @@ export default {
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-color: white;
   min-height: 100vh;
 }
 
@@ -98,7 +98,7 @@ h1 {
   font-weight: 700;
   color: white;
   margin: 0;
-  font-size: 1.8em;
+  font-size: 2.5em; /* Increased font size */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   letter-spacing: 1px;
 }
