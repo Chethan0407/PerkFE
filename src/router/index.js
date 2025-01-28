@@ -22,7 +22,12 @@ const routes = [
     component: PRDPage,
   },
   ...releasePlanRoutes,
-  ...testCaseRoutes
+  ...testCaseRoutes,
+  {
+    path: '/bug-dashboard',
+    name: 'BugDashboard',
+    component: () => import('@/views/bug-dashboard/BugDashboardView.vue')
+  }
 ];
 
 const router = createRouter({

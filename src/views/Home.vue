@@ -21,6 +21,7 @@
         </div>
         <ul class="menu-items">
           <li><a href="#" @click="navigateTo('home')">Home</a></li>
+          <li><a href="#" @click="navigateTo('test-cases')">Test Cases</a></li>
           <li><a href="#" @click="navigateTo('release-plans')">Release Plans</a></li>
           <li><a href="#" @click="navigateTo('bug-dashboard')">Bug Dashboard</a></li>
           <li><a href="#" @click="navigateTo('prd')">PRD</a></li>
@@ -150,6 +151,8 @@ export default {
       this.closeMenu();
       if (route === 'home') {
         this.$router.push('/');
+      } else if (route === 'test-cases') {
+        this.$router.push('/test-cases');
       } else if (route === 'release-plans') {
         this.$router.push('/release-plans');
       } else if (route === 'bug-dashboard') {

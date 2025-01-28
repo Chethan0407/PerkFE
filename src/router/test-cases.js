@@ -7,7 +7,7 @@ export const TEST_CASE_ROUTES = {
 export const testCaseRoutes = [
   {
     path: '/test-cases',
-    name: 'test-case-view',
+    name: TEST_CASE_ROUTES.SELECTION,
     component: () => import('@/views/test-cases/TestCaseView.vue')
   }
 ]; 
